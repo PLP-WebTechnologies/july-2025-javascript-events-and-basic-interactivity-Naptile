@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive JavaScript Demo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🎉 Interactive JavaScript Playground</h1>
+    <button id="themeToggle">🌞 Toggle Dark Mode</button>
+  </header>
+
+  <main>
+    <!-- Part 1: Event Handling Demo -->
+    <section>
+      <h2>Part 1: Event Handling</h2>
+      <button id="clickMeBtn">Click Me!</button>
+      <p id="message"></p>
+    </section>
+
+    <!-- Part 2: Interactive Elements -->
+    <section>
+      <h2>Part 2: Interactive Elements</h2>
+
+      <!-- Counter Game -->
+      <div class="card">
+        <h3>Counter Game</h3>
+        <p>Count: <span id="counter">0</span></p>
+        <button id="incrementBtn">➕ Increase</button>
+        <button id="resetBtn">🔄 Reset</button>
+      </div>
+
+      <!-- Collapsible FAQ -->
+      <div class="card">
+        <h3>FAQ Section</h3>
+        <button class="faq-toggle">What is this project?</button>
+        <p class="faq-answer">It’s a hands-on JavaScript practice project with events, interactivity, and validation.</p>
+
+        <button class="faq-toggle">How does dark mode work?</button>
+        <p class="faq-answer">By toggling a CSS class that changes background and text colors.</p>
+      </div>
+    </section>
+
+    <!-- Part 3: Form Validation -->
+    <section>
+      <h2>Part 3: Form Validation</h2>
+      <form id="signupForm" novalidate>
+        <label>
+          Name:
+          <input type="text" id="name" required>
+          <span class="error" id="nameError"></span>
+        </label>
+
+        <label>
+          Email:
+          <input type="email" id="email" required>
+          <span class="error" id="emailError"></span>
+        </label>
+
+        <label>
+          Password:
+          <input type="password" id="password" required>
+          <span class="error" id="passwordError"></span>
+        </label>
+
+        <button type="submit">Submit</button>
+        <p id="formSuccess"></p>
+      </form>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
